@@ -1,0 +1,29 @@
+{
+  "name": "example_macos",
+  "version": "1.0.0",
+  "description": "A simple NUT test example",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s1hofmann/native-ui-toolkit.git"
+  },
+  "author": {
+    "name": "Simon Hofmann",
+    "email": "dev@simon-hofmann.org",
+    "url": "https://simon-hofmann.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s1hofmann/native-ui-toolkit/issues"
+  },
+  "homepage": "https://github.com/s1hofmann/native-ui-toolkit#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "native-ui-toolkit": "0.0.4"
+  }
+}
