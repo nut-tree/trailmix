@@ -3,10 +3,10 @@
 const native = require("native-ui-toolkit");
 
 const square = async (control) => {
-    await control.mouse.move(controller.movement.right(500));
-    await control.mouse.move(controller.movement.down(500));
-    await control.mouse.move(controller.movement.left(500));
-    await control.mouse.move(controller.movement.up(500));
+    await control.mouse.move(control.movement.right(500));
+    await control.mouse.move(control.movement.down(500));
+    await control.mouse.move(control.movement.left(500));
+    await control.mouse.move(control.movement.up(500));
 };
 
 const openSpotlight = async (control) => {
