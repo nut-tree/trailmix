@@ -1,5 +1,5 @@
 {
-  "name": "keyboard-test",
+  "name": "sample-keyboard",
   "version": "1.0.0",
   "description": "A simple nut.js test example which tests keyboard control",
   "main": "index.js",
@@ -17,8 +17,10 @@
     "url": "https://github.com/s1hofmann/native-ui-toolkit/issues"
   },
   "homepage": "https://github.com/nut-tree/trailmix#trailmix",
+  "dependencies": {
+    "@nut-tree/nut-js": "^0.0.1"
+  },
   "devDependencies": {
-    "@nut-tree/nut-js": "^0.0.1",
     "jest": "^23.6.0"
   },
   "scripts": {
