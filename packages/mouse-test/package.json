@@ -1,23 +1,29 @@
 {
-	"name": "mouse-test",
-	"version": "1.0.0",
-	"description": "A simple nut.js test example which tests mouse control",
-	"main": "index.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/nut-tree/trailmix.git"
-	},
-	"author": {
-		"name": "Simon Hofmann",
-		"email": "dev@simon-hofmann.org",
-		"url": "https://simon-hofmann.org"
-	},
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/s1hofmann/native-ui-toolkit/issues"
-	},
-	"homepage": "https://github.com/nut-tree/trailmix#trailmix",
-	"scripts": {
-		"test": "jest"
-	}
+  "name": "sample-mouse",
+  "version": "1.0.0",
+  "description": "A simple nut.js test example which tests mouse control",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nut-tree/trailmix.git"
+  },
+  "author": {
+    "name": "Simon Hofmann",
+    "email": "dev@simon-hofmann.org",
+    "url": "https://simon-hofmann.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s1hofmann/native-ui-toolkit/issues"
+  },
+  "homepage": "https://github.com/nut-tree/trailmix#trailmix",
+  "dependencies": {
+    "@nut-tree/nut-js": "^0.0.1"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
 }
