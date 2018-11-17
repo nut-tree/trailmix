@@ -1,0 +1,17 @@
+os: linux
+dist: xenial
+
+language: node_js
+node_js:
+  - "lts/carbon"
+cache: npm
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install build-essential -y
+  - sudo apt-get install libxt-dev libxtst-dev libxinerama-dev -y
+  - sudo npm i -g lerna
+
+install:
+  - lerna bootstrap
+script: lerna run test
