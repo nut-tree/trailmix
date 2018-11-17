@@ -13,6 +13,6 @@ before_install:
 
 before_script:
   - npm i -g lerna
-  - lerna bootstrap
+  - lerna bootstrap --no-ci
 
 script: lerna run test
