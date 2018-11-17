@@ -19,9 +19,5 @@
 	"homepage": "https://github.com/nut-tree/trailmix#trailmix",
 	"scripts": {
 		"test": "jest"
-	},
-	"devDependencies": {
-		"jest": "^23.6.0",
-		"@nut-tree/nut-js": "^0.0.1"
 	}
 }
