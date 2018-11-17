@@ -17,6 +17,10 @@
 		"url": "https://github.com/s1hofmann/native-ui-toolkit/issues"
 	},
 	"homepage": "https://github.com/nut-tree/trailmix#trailmix",
+  "devDependencies": {
+    "@nut-tree/nut-js": "^0.0.1",
+    "jest": "^23.6.0"
+  },
 	"scripts": {
 		"test": "jest"
 	}
