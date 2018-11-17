@@ -2,6 +2,8 @@
   "name": "@nut-tree/trailmix",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.4.3"
+    "lerna": "^3.4.3",
+		"jest": "^23.6.0",
+		"@nut-tree/nut-js": "^0.0.1"
   }
 }

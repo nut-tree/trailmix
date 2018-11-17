@@ -2,9 +2,5 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.0.1",
-	"devDependencies": {
-		"jest": "^23.6.0",
-		"@nut-tree/nut-js": "^0.0.1"
-	}
+  "version": "0.0.1"
 }
