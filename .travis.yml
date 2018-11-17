@@ -13,6 +13,6 @@ before_install:
 
 before_script:
   - npm i -g lerna
-  - lerna bootstrap --no-ci
+  - travis_wait lerna bootstrap --progress --no-ci
 
 script: lerna run test
