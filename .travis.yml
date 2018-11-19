@@ -13,7 +13,6 @@ before_install:
 
 install:
   - npm i
-  - npm i -g lerna
-  - travis_wait 60 lerna bootstrap --progress --no-ci --hoist
+  - travis_wait 30 lerna bootstrap --progress --no-ci --hoist
 
 script: xvfb-run --server-args="-screen 0 1024x768x24" lerna run test
