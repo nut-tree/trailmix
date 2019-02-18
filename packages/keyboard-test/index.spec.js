@@ -1,18 +1,15 @@
 "use strict";
 
-const native = require("@nut-tree/nut-js");
+const { keyboard, Key } = require("@nut-tree/nut-js");
 
-const openLauncher = async (control) => {
-    await control.keyboard.type(native.Key.LeftSuper);
-}
+const openLauncher = async () => {
+  await keyboard.type(Key.LeftSuper);
+};
 
 describe("Keyboard test", () => {
-    it("should open Nautilus", async () => {
-        const config = new native.Config();
-        const control = new native.Controller(config);
-
-        await openLauncher(control);
-        await control.keyboard.type("nautilus");
-        await control.keyboard.type(native.Key.Return);
-    });
+  it("should open Nautilus", async () => {
+    await openLauncher();
+    await keyboard.type("nautilus");
+    await keyboard.type(Key.Return);
+  });
 });

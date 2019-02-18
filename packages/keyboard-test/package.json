@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/nut-tree/trailmix#trailmix",
   "dependencies": {
-    "@nut-tree/nut-js": "^0.0.1"
+    "@nut-tree/nut-js": "^0.0.2"
   },
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^24.1.0"
   },
   "scripts": {
     "test": "jest"
