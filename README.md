@@ -9,6 +9,6 @@ Small sample projects which demo the usage of nut.js (the Native UI Toolkit)
 ## Samples
 - [x] Keyboard control
 - [x] Mouse control
-- [ ] Screen based actions
+- [x] Screen based actions
 - [ ] Process support
-- [ ] Jest integration
+- [x] Jest integration
