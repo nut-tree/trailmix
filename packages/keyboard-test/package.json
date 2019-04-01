@@ -14,11 +14,11 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/s1hofmann/native-ui-toolkit/issues"
+    "url": "https://github.com/nut-tree/trailmix/issues"
   },
   "homepage": "https://github.com/nut-tree/trailmix#trailmix",
   "dependencies": {
-    "@nut-tree/nut-js": "^0.0.2"
+    "@nut-tree/nut-js": "^1.0.0"
   },
   "devDependencies": {
     "jest": "^24.1.0"
