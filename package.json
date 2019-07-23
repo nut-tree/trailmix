@@ -5,11 +5,7 @@
     "postinstall": "lerna bootstrap --progress --no-ci",
     "test": "lerna run test"
   },
-  "dependencies": {
-    "@nut-tree/nut-js": "^1.0.0"
-  },
   "devDependencies": {
-    "lerna": "^3.13.0",
-    "jest": "^24.1.0"
+    "lerna": "^3.16.2"
   }
 }
