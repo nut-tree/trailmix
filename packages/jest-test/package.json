@@ -1,7 +1,7 @@
 {
-	"name": "sample-mouse",
+	"name": "jest-test",
 	"version": "1.0.0",
-	"description": "A simple nut.js test example which tests mouse control",
+	"description": "A simple nut.js test example which demos Jest integration",
 	"main": "index.js",
 	"repository": {
 		"type": "git",
