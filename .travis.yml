@@ -1,10 +1,13 @@
-os: linux
-dist: xenial
-
-language: node_js
-node_js:
-  - "lts/dubnium"
-cache: npm
+matrix:
+  include:
+    - name: "lts/dubnium"
+      os: linux
+      dist: xenial
+      env: NODE_VERSION=lts/dubnium
+    - name: "lts/erbium"
+      os: linux
+      dist: xenial
+      env: NODE_VERSION=lts/erbium
 
 services:
   - docker
@@ -19,7 +22,7 @@ before_install:
   - docker run -it -d --name nut-ci --user $(id -u):$(id -g) -v ${PWD}:${PWD}:rw s1hofmann/nut-ci:latest bash
 
 install:
-  - travis_retry docker exec nut-ci bash -c "bash $PWD/.build/build.sh ${PWD} lts/dubnium"
+  - travis_retry docker exec nut-ci bash -c "bash $PWD/.build/build.sh ${PWD} ${NODE_VERSION}"
 
 script:
-  - travis_retry docker exec nut-ci bash -c "bash $PWD/.build/test.sh ${PWD} lts/dubnium"
+  - travis_retry docker exec nut-ci bash -c "bash $PWD/.build/test.sh ${PWD} ${NODE_VERSION}"
