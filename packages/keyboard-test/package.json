@@ -12,15 +12,18 @@
 		"email": "dev@simon-hofmann.org",
 		"url": "https://simon-hofmann.org"
 	},
+	"scripts": {
+		"test": "jest"
+	},
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/nut-tree/trailmix/issues"
 	},
 	"homepage": "https://github.com/nut-tree/trailmix#trailmix",
 	"dependencies": {
-		"@nut-tree/nut-js": "^1.3.0"
+		"@nut-tree/nut-js": "^1.3.1"
 	},
 	"devDependencies": {
-		"jest": "^24.8.0"
+		"jest": "^24.9.0"
 	}
 }
