@@ -2,10 +2,12 @@
   "name": "@nut-tree/trailmix",
   "private": true,
   "scripts": {
+    "audit": "npm audit fix && lerna-audit",
     "postinstall": "lerna bootstrap --progress --no-ci",
     "test": "lerna run test"
   },
   "devDependencies": {
-    "lerna": "^3.18.3"
+    "lerna": "^3.20.2",
+    "lerna-audit": "^1.1.1"
   }
 }
