@@ -12,6 +12,9 @@
     "email": "dev@simon-hofmann.org",
     "url": "https://simon-hofmann.org"
   },
+  "scripts": {
+    "test": "jest"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nut-tree/trailmix/issues"
