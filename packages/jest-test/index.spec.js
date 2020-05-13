@@ -2,9 +2,7 @@
 
 const {jestMatchers, mouse, screen, Point, Region} = require("@nut-tree/nut-js");
 
-beforeAll(() => {
-    expect.extend(jestMatchers);
-});
+expect.extend(jestMatchers);
 
 describe("Basic test with custom Jest matchers", () => {
     it("should verify that cursor is at a certain position", async () => {
@@ -16,8 +14,8 @@ describe("Basic test with custom Jest matchers", () => {
         await mouse.setPosition(targetPoint);
 
         // THEN
-        expect(mouse).toBeAt(targetPoint);
-        expect(mouse).not.toBeIn(targetRegion);
+        await expect(mouse).toBeAt(targetPoint);
+        await expect(mouse).not.toBeIn(targetRegion);
     });
 
     it("should verify that the screen shows a certain image", async () => {
