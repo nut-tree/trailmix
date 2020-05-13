@@ -1,6 +1,9 @@
 {
   "packages": [
-    "packages/*"
+    "packages/jest-test",
+    "packages/keyboard-test",
+    "packages/mouse-test",
+    "packages/screen-test"
   ],
   "version": "1.4.1"
 }
