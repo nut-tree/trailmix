@@ -4,9 +4,9 @@ nut.js allows to simulate keyboard input by typing text or pressing / releasing 
 
 - [Configuration](#configuration)
     - [autoDelayMs](#autodelayms)
-- [type](#typehttpsnut-treegithubionutjsclasseskeyboardhtmltype)
-- [pressKey](#presskeyhttpsnut-treegithubionutjsclasseskeyboardhtmlpresskey)
-- [releaseKey](#releasekeyhttpsnut-treegithubionutjsclasseskeyboardhtmlreleasekey)
+- [type](#type)
+- [pressKey](#presskey)
+- [releaseKey](#releasekey)
 
 ## Configuration
 

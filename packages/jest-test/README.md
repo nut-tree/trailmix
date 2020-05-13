@@ -3,9 +3,9 @@
 nut.js provides custom matchers for Jest, which allows to write UI tests using well known syntax.
 
 - [Setup](#setup)
-- [toBeAt](#tobeathttpsnut-treegithubionutjsglobalshtmltobeat)
-- [toBeIn](#tobeinhttpsnut-treegithubionutjsglobalshtmltobein)
-- [toShow](#toshowhttpsnut-treegithubionutjsglobalshtmltoshow)
+- [toBeAt](#tobeat)
+- [toBeIn](#tobein)
+- [toShow](#toshow)
 
 ## Setup
 

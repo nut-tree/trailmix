@@ -5,24 +5,24 @@ nut.js allows to simulate mouse input by moving the cursor, clicking mouse butto
 - [Configuration](#configuration)
     - [autoDelayMs](#autodelayms)
     - [mouseSpeed](#mousespeed)
-- [setPosition](#setpositionhttpsnut-treegithubionutjsclassesmousehtmlsetposition)
-- [getPosition](#getpositionhttpsnut-treegithubionutjsclassesmousehtmlgetposition)
-- [move](#movehttpsnut-treegithubionutjsclassesmousehtmlmove)
-    - [straightTo](#straighttohttpsnut-treegithubionutjsinterfacesmovementapihtmlstraightto)
-    - [centerOf](#centerofhttpsnut-treegithubionutjsglobalshtmlcenterof)
-    - [left](#lefthttpsnut-treegithubionutjsinterfacesmovementapihtmlleft)
-    - [right](#righthttpsnut-treegithubionutjsinterfacesmovementapihtmlright)
-    - [up](#uphttpsnut-treegithubionutjsinterfacesmovementapihtmlup)
-    - [down](#downhttpsnut-treegithubionutjsinterfacesmovementapihtmldown)
-- [leftClick](#leftclickhttpsnut-treegithubionutjsclassesmousehtmlleftclick)
-- [rightClick](#rightclickhttpsnut-treegithubionutjsclassesmousehtmlrightclick)
-- [scrollDown](#scrolldownhttpsnut-treegithubionutjsclassesmousehtmlscrolldown)
-- [scrollUp](#scrolluphttpsnut-treegithubionutjsclassesmousehtmlscrollup)
-- [scrollLeft](#scrolllefthttpsnut-treegithubionutjsclassesmousehtmlscrollleft)
-- [scrollRight](#scrollrighthttpsnut-treegithubionutjsclassesmousehtmlscrollright)
-- [drag](#draghttpsnut-treegithubionutjsclassesmousehtmldrag)
-- [pressButton](#pressbuttonhttpsnut-treegithubionutjsclassesmousehtmlpressbutton)
-- [releaseButton](#releasebuttonhttpsnut-treegithubionutjsclassesmousehtmlreleasebutton)
+- [setPosition](#setposition)
+- [getPosition](#getposition)
+- [move](#move)
+    - [straightTo](#straightto)
+    - [centerOf](#centerof)
+    - [left](#left)
+    - [right](#right)
+    - [up](#up)
+    - [down](#down)
+- [leftClick](#leftclick)
+- [rightClick](#rightclick)
+- [scrollDown](#scrolldown)
+- [scrollUp](#scrollup)
+- [scrollLeft](#scroll)
+- [scrollRight](#scrollright)
+- [drag](#drag)
+- [pressButton](#pressbutton)
+- [releaseButton](#releasebutton)
 
 ## Configuration
 
@@ -60,7 +60,7 @@ This way it's possible to fully customize mouse movment behaviour by implementin
 
 `centerOf` is a helper function which takes a [Region](https://nut-tree.github.io/nut.js/classes/region.html) and returns the center [Point](https://nut-tree.github.io/nut.js/classes/point.html) of that region.
 
-`centerOf` is a great fit for [`straightTo`](#straighttohttpsnut-treegithubionutjsinterfacesmovementapihtmlstraightto) as it allows us to move to the center of a [Region](https://nut-tree.github.io/nut.js/classes/region.html) returned by e.g. [`screen.find`](https://nut-tree.github.io/nut.js/classes/screen.html#find).
+`centerOf` is a great fit for [`straightTo`](#straightto) as it allows us to move to the center of a [Region](https://nut-tree.github.io/nut.js/classes/region.html) returned by e.g. [`screen.find`](https://nut-tree.github.io/nut.js/classes/screen.html#find).
 
 ```js
 await mouse.move(straightTo(centerOf(screen.find(...))));
@@ -70,7 +70,7 @@ await mouse.move(straightTo(centerOf(screen.find(...))));
 
 `randomPointIn` is another helper function which takes a [Region](https://nut-tree.github.io/nut.js/classes/region.html) and returns a random [Point](https://nut-tree.github.io/nut.js/classes/point.html) within that region.
 
-`randomPointIn` is a great fit for [`straightTo`](#straighttohttpsnut-treegithubionutjsinterfacesmovementapihtmlstraightto) as it allows us to move to the center of a [Region](https://nut-tree.github.io/nut.js/classes/region.html) returned by e.g. [`screen.find`](https://nut-tree.github.io/nut.js/classes/screen.html#find).
+`randomPointIn` is a great fit for [`straightTo`](#straightto) as it allows us to move to the center of a [Region](https://nut-tree.github.io/nut.js/classes/region.html) returned by e.g. [`screen.find`](https://nut-tree.github.io/nut.js/classes/screen.html#find).
 
 ```js
 await mouse.move(straightTo(randomPointIn(screen.find(...))));
@@ -134,7 +134,7 @@ await mouse.move(down(10));
 
 ## [`drag`](https://nut-tree.github.io/nut.js/classes/mouse.html#drag)
 
-Similar to ['move'](#movehttpsnut-treegithubionutjsclassesmousehtmlmove), `drag` move the mouse cursor along a given path.
+Similar to ['move'](#move), `drag` move the mouse cursor along a given path.
 
 While moving, it presses and holds the left mouse button, performing a drag gesture.
 

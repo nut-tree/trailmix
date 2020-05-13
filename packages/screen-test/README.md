@@ -8,13 +8,13 @@ nut.js allows to search and wait for images on your screen to either verify cert
     - [highlightDurationMs](#highlightdurationms)
     - [highlightOpacity](#highlightopacity)
     - [resourceDirectory](#resourcedirectory)
-- [capture](#capturehttpsnut-treegithubionutjsclassesscreenhtmlcapture)
-- [find](#findhttpsnut-treegithubionutjsclassesscreenhtmlfind)
-- [height](#heighthttpsnut-treegithubionutjsclassesscreenhtmlheight)
-- [highlight](#highlighthttpsnut-treegithubionutjsclassesscreenhtmlhighlight)
-- [on](#onhttpsnut-treegithubionutjsclassesscreenhtmlon)
-- [waitFor](#waitforhttpsnut-treegithubionutjsclassesscreenhtmlwaitfor)
-- [width](#widthhttpsnut-treegithubionutjsclassesscreenhtmlwidth)
+- [capture](#capture)
+- [find](#find)
+- [height](#height)
+- [highlight](#highlight)
+- [on](#on)
+- [waitFor](#waitfor)
+- [width](#width)
 
 ## Configuration
 
@@ -55,6 +55,10 @@ Following this scheme loading of platform specific images would be possible with
 It is possible to override the the [configured matching confidence](#confidence) and search region providing [LocationParameters](https://nut-tree.github.io/nut.js/classes/locationparameters.html).
 In case of a match, the corresponding [Region](https://nut-tree.github.io/nut.js/classes/region.html) on screen is returned.
 
+```js
+await mouse.move(straightTo(centerOf(screen.find("image.png"))));
+```
+
 ## [`height`](https://nut-tree.github.io/nut.js/classes/screen.html#height)
 
 `height` returns the main screen's height in pixels.
@@ -64,6 +68,10 @@ In case of a match, the corresponding [Region](https://nut-tree.github.io/nut.js
 When working with template images to e.g. move the mouse to certain positions it can be quite cumbersome to follow along without visual clues.
 
 `highlight` allows you to display an opaque window overlay which makes it easier to visually follow detection / movement.
+
+```js
+await screen.highlight(screen.find("image.png"));
+```
 
 ## [`on`](https://nut-tree.github.io/nut.js/classes/screen.html#on)
 
@@ -77,6 +85,10 @@ Similar to [find](#findhttpsnut-treegithubionutjsclassesscreenhtmlfind), `waitFo
 
 While [find](#findhttpsnut-treegithubionutjsclassesscreenhtmlfind) will fail immediately if no match is found, `waitFor` allows to configure a timeout in milliseconds during which the screen will repeatedly be scanned for the template image.
 Once the configured timeout is reached with no match, `waitFor` will fail.
+
+```js
+await mouse.move(straightTo(centerOf(screen.waitFor("image.png", 3000))));
+```
 
 ## [`width`](https://nut-tree.github.io/nut.js/classes/screen.html#width)
 
