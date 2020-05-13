@@ -3,9 +3,9 @@
 nut.js provides custom matchers for Jest, which allows to write UI tests using well known syntax.
 
 - [Setup](#setup)
-- [toBeAt](#tobeat)
-- [toBeIn](#tobein)
-- [toShow](#toshow)
+- [toBeAt](#tobeathttpsnut-treegithubionutjsglobalshtmltobeat)
+- [toBeIn](#tobeinhttpsnut-treegithubionutjsglobalshtmltobein)
+- [toShow](#toshowhttpsnut-treegithubionutjsglobalshtmltoshow)
 
 ## Setup
 
@@ -17,7 +17,7 @@ const {jestMatchers} = require("@nut-tree/nut-js");
 expect.extend(jestMatchers);
 ```
 
-## `toBeAt`
+## [`toBeAt`](https://nut-tree.github.io/nut.js/globals.html#tobeat)
 
 `toBeAt` is a matcher which verifies mouse cursor position.
 
@@ -64,7 +64,7 @@ describe("Basic test with custom Jest matchers", () => {
 });
 ```
 
-## `toBeIn`
+## [`toBeIn`](https://nut-tree.github.io/nut.js/globals.html#tobein)
 
 `toBeIn` allows us to verify whether our [mouse](https://nut-tree.github.io/nut.js/classes/mouse.html) cursor is located within a certain [Region](https://nut-tree.github.io/nut.js/classes/region.html) or not.
 
@@ -110,7 +110,7 @@ describe("Basic test with custom Jest matchers", () => {
 });
 ```
 
-## `toShow`
+## [`toShow`](https://nut-tree.github.io/nut.js/globals.html#toshow)
 
 Sometimes we want to verify that our [screen](https://nut-tree.github.io/nut.js/classes/screen.html) displays a certain image.
 
