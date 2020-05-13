@@ -31,7 +31,11 @@ describe("Screen test", () => {
             jest.setTimeout(10000);
             screen.config.resourceDirectory = "../../e2e/assets";
 
-            console.log(await screen.find("no_match.png"));
+            try {
+                await screen.find("calculator.png");
+            } catch (e) {
+                console.log(e);
+            }
         });
     })
 
