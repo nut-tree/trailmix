@@ -11,3 +11,4 @@ I want to:
 - automate [mouse movement](./packages/mouse-test/README.md)
 - search for images on my [screen](./packages/screen-test/README.md)
 - integrate nut.js with [Jest](./packages/jest-test/README.md)
+- see an [Electron + nut.js sample](./packages/electron-sample/README.md)

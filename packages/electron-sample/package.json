@@ -1,0 +1,32 @@
+{
+  "name": "electron-sample",
+  "version": "1.4.1",
+  "description": "A nut.js sample which shows usage with Electron",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nut-tree/trailmix.git"
+  },
+  "author": {
+    "name": "Simon Hofmann",
+    "email": "dev@simon-hofmann.org",
+    "url": "https://simon-hofmann.org"
+  },
+  "scripts": {
+    "pretest": "electron-rebuild",
+    "test": "electron ."
+  },
+  "keywords": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nut-tree/trailmix/issues"
+  },
+  "homepage": "https://github.com/nut-tree/trailmix#trailmix",
+  "dependencies": {
+    "@nut-tree/nut-js": "^1.4.1",
+    "electron": "^8.2.5"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.11.0"
+  }
+}
