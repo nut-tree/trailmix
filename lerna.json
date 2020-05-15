@@ -3,7 +3,8 @@
     "packages/jest-test",
     "packages/keyboard-test",
     "packages/mouse-test",
-    "packages/screen-test"
+    "packages/screen-test",
+    "packages/electron-sample"
   ],
   "version": "1.4.1"
 }

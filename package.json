@@ -7,7 +7,18 @@
     "test": "lerna run test"
   },
   "devDependencies": {
+    "@nut-tree/nut-js": "^1.4.1",
+    "electron": "^8.2.5",
+    "electron-rebuild": "^1.11.0",
+    "jest": "^24.9.0",
     "lerna": "^3.20.2",
     "lerna-audit": "^1.1.1"
+  },
+  "dependencies": {
+    "electron-sample": "file:packages/electron-sample",
+    "jest-test": "file:packages/jest-test",
+    "sample-keyboard": "file:packages/keyboard-test",
+    "sample-mouse": "file:packages/mouse-test",
+    "sample-screen": "file:packages/screen-test"
   }
 }

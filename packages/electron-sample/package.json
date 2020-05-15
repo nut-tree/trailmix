@@ -21,12 +21,5 @@
   "bugs": {
     "url": "https://github.com/nut-tree/trailmix/issues"
   },
-  "homepage": "https://github.com/nut-tree/trailmix#trailmix",
-  "dependencies": {
-    "@nut-tree/nut-js": "^1.4.1",
-    "electron": "^8.2.5"
-  },
-  "devDependencies": {
-    "electron-rebuild": "^1.11.0"
-  }
+  "homepage": "https://github.com/nut-tree/trailmix#trailmix"
 }
