@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@nut-tree/nut-js": "^1.4.1",
-    "electron": "^8.2.5",
+    "electron": "^9.0.0",
     "electron-rebuild": "^1.11.0",
     "jest": "^24.9.0",
     "lerna": "^3.20.2",
