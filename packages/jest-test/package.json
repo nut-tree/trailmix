@@ -19,5 +19,7 @@
   "bugs": {
     "url": "https://github.com/nut-tree/trailmix/issues"
   },
-  "homepage": "https://github.com/nut-tree/trailmix#trailmix"
+  "homepage": "https://github.com/nut-tree/trailmix#trailmix",
+  "dependencies": {},
+  "devDependencies": {}
 }
