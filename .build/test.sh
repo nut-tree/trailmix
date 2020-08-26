@@ -21,5 +21,5 @@ echo "Entering working directory $targetDir"
 cd $targetDir
 echo "Installing node version $nodeVersion"
 nvm install $nodeVersion
-echo "npm test"
-npm test
+echo "npm cit"
+npm cit
