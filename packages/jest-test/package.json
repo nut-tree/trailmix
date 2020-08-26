@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "run-script-os",
-    "test:default": "jest --runInBand"
+    "test:linux": "jest --runInBand"
   },
   "license": "MIT",
   "bugs": {
