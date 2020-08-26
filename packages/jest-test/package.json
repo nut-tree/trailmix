@@ -1,6 +1,6 @@
 {
   "name": "jest-test",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "A simple nut.js test example which demos Jest integration",
   "main": "index.js",
   "repository": {
