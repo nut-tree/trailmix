@@ -13,7 +13,9 @@
     "url": "https://simon-hofmann.org"
   },
   "scripts": {
-    "test": "jest --runInBand"
+    "test": "run-script-os",
+    "test:darwin": "jest --runInBand",
+    "test:default": "echo 'No keyboard tests for current platform'"
   },
   "license": "MIT",
   "bugs": {

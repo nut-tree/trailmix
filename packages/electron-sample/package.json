@@ -14,7 +14,8 @@
   },
   "scripts": {
     "pretest": "electron-rebuild",
-    "test": "electron ."
+    "test": "run-script-os",
+    "test:default": "electron ."
   },
   "keywords": [],
   "license": "MIT",

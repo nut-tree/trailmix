@@ -12,7 +12,8 @@
     "electron-rebuild": "^1.11.0",
     "jest": "^24.9.0",
     "lerna": "^3.20.2",
-    "lerna-audit": "^1.1.1"
+    "lerna-audit": "^1.1.1",
+    "run-script-os": "^1.1.1"
   },
   "dependencies": {
     "electron-sample": "file:packages/electron-sample",

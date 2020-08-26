@@ -13,7 +13,8 @@
     "url": "https://simon-hofmann.org"
   },
   "scripts": {
-    "test": "jest --runInBand"
+    "test": "run-script-os",
+    "test:default": "jest --runInBand"
   },
   "license": "MIT",
   "bugs": {
