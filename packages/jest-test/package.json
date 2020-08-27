@@ -14,7 +14,8 @@
   },
   "scripts": {
     "test": "run-script-os",
-    "test:linux": "jest --runInBand"
+    "test:linux": "jest --runInBand",
+    "test:default": "echo 'No Jest tests for current platform'"
   },
   "license": "MIT",
   "bugs": {
