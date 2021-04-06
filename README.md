@@ -1,7 +1,6 @@
 # trailmix
 
-[![Build Status](https://travis-ci.com/nut-tree/trailmix.svg?branch=master)](https://travis-ci.com/nut-tree/trailmix)
-[![Build status](https://ci.appveyor.com/api/projects/status/u0qcph1kt4rp3r4p/branch/master?svg=true)](https://ci.appveyor.com/project/s1hofmann/trailmix/branch/master)
+[![Run CI](https://github.com/nut-tree/trailmix/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/nut-tree/trailmix/actions/workflows/ci.yaml)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 
 Small sample projects which demo the usage of nut.js.
