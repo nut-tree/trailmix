@@ -13,11 +13,15 @@
     "url": "https://simon-hofmann.org"
   },
   "scripts": {
-    "test": "jest --runInBand"
+    "test": "run-script-os",
+    "test:linux": "jest --runInBand",
+    "test:default": "echo 'No Jest tests for current platform'"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nut-tree/trailmix/issues"
   },
-  "homepage": "https://github.com/nut-tree/trailmix#trailmix"
+  "homepage": "https://github.com/nut-tree/trailmix#trailmix",
+  "dependencies": {},
+  "devDependencies": {}
 }

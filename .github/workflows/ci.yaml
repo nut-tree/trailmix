@@ -7,7 +7,7 @@ jobs:
   test:
     strategy:
       matrix:
-        os: [ ubuntu-latest ]
+        os: [ ubuntu-latest, windows-latest, macos-latest ]
         node: [ 10, 12, 14, 15 ]
     runs-on: ${{matrix.os}}
     steps:
@@ -17,23 +17,9 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{matrix.node}}
-      - name: Setup Docker
-        if: ${{matrix.os == 'ubuntu-latest'}}
-        run: |
-          docker pull s1hofmann/nut-ci:latest
-          docker run -it -d --name nut-ci --shm-size 4gb --user $(id -u):$(id -g) -v ${PWD}:${PWD}:rw s1hofmann/nut-ci:latest bash
-      - name: Install
-        run: npm ci
-      - name: Compile
-        run: npm run compile
-      - name: Init e2e test subpackage
-        run: npm --prefix e2e/tests ci
-      - name: Generate coverage report
-        uses: GabrielBB/xvfb-action@v1
-        with:
-          run: npm run coverage -- --coverageDirectory=coverage/unit
-      - name: Run Docker E2E tests
-        if: ${{matrix.os == 'ubuntu-latest'}}
-        run: |
-          docker exec nut-ci bash -c "bash $PWD/.build/build.sh ${PWD} ${{matrix.node}}"
-          docker exec nut-ci bash -c "bash $PWD/.build/test.sh ${PWD} ${{matrix.node}}"
+      - name: Setup
+        shell: bash
+        run: "$PWD/.build/setup_${{matrix.os}}.sh ${PWD} ${{matrix.node}}"
+      - name: Test
+        shell: bash
+        run: "$PWD/.build/run_${{matrix.os}}.sh ${PWD} ${{matrix.node}}"

@@ -4,7 +4,7 @@ nut.js allows to search and wait for images on your screen to either verify cert
 
 - [Configuration](#configuration)
     - [confidence](#confidence)
-    - [autoHighlight](#autohighlight)
+    - [autoHighlight](#autoHighlight)
     - [highlightDurationMs](#highlightdurationms)
     - [highlightOpacity](#highlightopacity)
     - [resourceDirectory](#resourcedirectory)
@@ -26,7 +26,7 @@ The nut.js [screen](https://nut-tree.github.io/nut.js/classes/screen.html) comes
 
 ### autoHighlight
 
-`screen.config.autohighlight` is a boolean toggle which enables automated highlighting of image search results.
+`screen.config.autoHighlight` is a boolean toggle which enables automated highlighting of image search results.
 This will highlight the matching [Region]() by showing an opaque window.
 
 ### highlightDurationMs
