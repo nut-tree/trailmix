@@ -1,6 +1,6 @@
 {
   "name": "sample-mouse",
-  "version": "1.4.1",
+  "version": "1.6.0",
   "description": "A simple nut.js test example which tests mouse control",
   "main": "index.js",
   "repository": {
