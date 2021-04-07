@@ -4,6 +4,8 @@ set -ev
 
 CHROME_SANDBOX_FILE=$1
 
+ls -la "$(dirname ${CHROME_SANDBOX_FILE})"
+
 echo processing $CHROME_SANDBOX_FILE file
 
 chown root $CHROME_SANDBOX_FILE
