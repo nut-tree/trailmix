@@ -13,10 +13,10 @@
     "url": "https://simon-hofmann.org"
   },
   "scripts": {
-    "pretest": "bash $PWD/node_modules/electron/dist/chrome-sandbox && electron-rebuild",
+    "pretest": "electron-rebuild",
     "test": "run-script-os",
     "test:darwin:win32": "echo 'No Electron tests for current platform'",
-    "test:default": "electron ."
+    "test:default": "bash $PWD/node_modules/electron/dist/chrome-sandbox  && electron ."
   },
   "keywords": [],
   "license": "MIT",
