@@ -15,6 +15,7 @@
   "scripts": {
     "pretest": "electron-rebuild",
     "test": "run-script-os",
+    "test:darwin:win32": "echo 'No Electron tests for current platform'",
     "test:default": "electron ."
   },
   "keywords": [],

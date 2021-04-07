@@ -14,6 +14,7 @@
   },
   "scripts": {
     "test": "run-script-os",
+    "test:darwin": "echo 'No mouse tests for current platform'",
     "test:default": "jest --runInBand"
   },
   "license": "MIT",
