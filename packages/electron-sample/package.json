@@ -16,7 +16,7 @@
     "pretest": "electron-rebuild",
     "test": "run-script-os",
     "test:darwin:win32": "echo 'No Electron tests for current platform'",
-    "test:default": "bash $PWD/../../node_modules/electron/dist/chrome-sandbox  && electron ."
+    "test:default": "electron ."
   },
   "keywords": [],
   "license": "MIT",
