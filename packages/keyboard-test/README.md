@@ -10,15 +10,15 @@ nut.js allows to simulate keyboard input by typing text or pressing / releasing 
 
 ## Configuration
 
-The nut.js [keyboard](https://nut-tree.github.io/nut.js/classes/keyboard.html) comes with a [config](https://nut-tree.github.io/nut.js/classes/keyboard.html#config) object which allows to configure it's behaviour.
+The nut.js [keyboard](https://nut-tree.github.io/apidoc/classes/keyboard.html) comes with a [config](https://nut-tree.github.io/apidoc/classes/keyboard.html#config) object which allows to configure it's behaviour.
 
 ### `autoDelayMs`
 
 `keyboard.config.autoDelayMs` configures the delay between keypresses.
 
-## [`type`](https://nut-tree.github.io/nut.js/classes/keyboard.html#type)
+## [`type`](https://nut-tree.github.io/apidoc/classes/keyboard.html#type)
 
-`type` allows one to type either [strings or Keys](https://nut-tree.github.io/nut.js/globals.html#stringorkey)
+`type` allows one to type either [strings or Keys](https://nut-tree.github.io/apidoc/globals.html#stringorkey)
 
 ```js
 const {keyboard, Key} = require("@nut-tree/nut-js");
@@ -31,7 +31,7 @@ describe("Keyboard test", () => {
 });
 ```
 
-## [`pressKey`](https://nut-tree.github.io/nut.js/classes/keyboard.html#presskey)
+## [`pressKey`](https://nut-tree.github.io/apidoc/classes/keyboard.html#presskey)
 
 `pressKey` will press and hold multiple keys.
 
@@ -46,7 +46,7 @@ describe("Keyboard test", () => {
 });
 ```
 
-## [`releaseKey`](https://nut-tree.github.io/nut.js/classes/keyboard.html#releasekey)
+## [`releaseKey`](https://nut-tree.github.io/apidoc/classes/keyboard.html#releasekey)
 
 `releaseKey` will release multiple keys again.
 
