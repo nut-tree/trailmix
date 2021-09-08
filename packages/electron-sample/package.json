@@ -14,14 +14,20 @@
   },
   "scripts": {
     "pretest": "electron-rebuild",
-    "test": "run-script-os",
-    "test:darwin:win32": "echo 'No Electron tests for current platform'",
-    "test:default": "electron ."
+    "test": "electron ."
   },
   "keywords": [],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nut-tree/trailmix/issues"
   },
-  "homepage": "https://github.com/nut-tree/trailmix#trailmix"
+  "homepage": "https://github.com/nut-tree/trailmix#trailmix",
+  "dependencies": {
+    "@nut-tree/nut-js": "next",
+    "electron": "^13.0.0"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^3.2.3",
+    "jest": "^26.6.3"
+  }
 }
