@@ -1,6 +1,6 @@
 {
   "name": "jest-test",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "A simple nut.js test example which demos Jest integration",
   "main": "index.js",
   "repository": {
@@ -21,6 +21,5 @@
   "bugs": {
     "url": "https://github.com/nut-tree/trailmix/issues"
   },
-  "homepage": "https://github.com/nut-tree/trailmix#trailmix",
-  "devDependencies": {}
+  "homepage": "https://github.com/nut-tree/trailmix#trailmix"
 }

@@ -1,6 +1,6 @@
 {
   "name": "electron-sample",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "A nut.js sample which shows usage with Electron",
   "main": "main.js",
   "repository": {
@@ -23,6 +23,5 @@
   "bugs": {
     "url": "https://github.com/nut-tree/trailmix/issues"
   },
-  "homepage": "https://github.com/nut-tree/trailmix#trailmix",
-  "devDependencies": {}
+  "homepage": "https://github.com/nut-tree/trailmix#trailmix"
 }
