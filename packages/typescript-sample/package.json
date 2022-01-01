@@ -1,6 +1,6 @@
 {
   "name": "typescript-sample",
-  "version": "1.7.0",
+  "version": "2.0.0",
   "description": "A simple nut.js test example which demos usage with TypeScript",
   "main": "index.ts",
   "repository": {
@@ -9,8 +9,8 @@
   },
   "author": {
     "name": "Simon Hofmann",
-    "email": "dev@simon-hofmann.org",
-    "url": "https://simon-hofmann.org"
+    "email": "kontakt@s1h.org",
+    "url": "https://s1h.org"
   },
   "scripts": {
     "test": "ts-node index.ts"
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/nut-tree/trailmix#trailmix",
   "devDependencies": {
-    "@nut-tree/nut-js": "1.7.0",
+    "@nut-tree/nut-js": "2.0.0",
     "@types/node": "^16.7.13",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.2"

@@ -1,6 +1,6 @@
 {
   "name": "jest-test",
-  "version": "1.7.0",
+  "version": "2.0.0",
   "description": "A simple nut.js test example which demos Jest integration",
   "main": "index.js",
   "repository": {
@@ -9,8 +9,8 @@
   },
   "author": {
     "name": "Simon Hofmann",
-    "email": "dev@simon-hofmann.org",
-    "url": "https://simon-hofmann.org"
+    "email": "kontakt@s1h.org",
+    "url": "https://s1h.org"
   },
   "scripts": {
     "test": "jest --runInBand"
@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/nut-tree/trailmix#trailmix",
   "devDependencies": {
-    "@nut-tree/nut-js": "1.7.0",
+    "@nut-tree/nut-js": "2.0.0",
+    "@nut-tree/template-matcher": "1.0.1",
     "jest": "^26.6.3"
-  }
+  },
+  "dependencies": {}
 }

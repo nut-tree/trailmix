@@ -1,6 +1,6 @@
 {
   "name": "sample-keyboard",
-  "version": "1.7.0",
+  "version": "2.0.0",
   "description": "A simple nut.js test example which tests keyboard control",
   "main": "index.js",
   "repository": {
@@ -9,8 +9,8 @@
   },
   "author": {
     "name": "Simon Hofmann",
-    "email": "dev@simon-hofmann.org",
-    "url": "https://simon-hofmann.org"
+    "email": "kontakt@s1h.org",
+    "url": "https://s1h.org"
   },
   "scripts": {
     "test": "run-script-os",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/nut-tree/trailmix#trailmix",
   "devDependencies": {
-    "@nut-tree/nut-js": "1.7.0",
+    "@nut-tree/nut-js": "2.0.0",
     "jest": "^26.6.3",
     "run-script-os": "^1.1.6"
   }

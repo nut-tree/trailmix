@@ -1,5 +1,6 @@
 const {app, ipcMain, BrowserWindow} = require('electron')
-const {mouse, screen, straightTo, centerOf} = require("@nut-tree/nut-js");
+const {mouse, screen, straightTo, centerOf, Region, imageResource, sleep} = require("@nut-tree/nut-js");
+require("@nut-tree/template-matcher");
 const path = require('path')
 
 function createWindow() {
@@ -17,7 +18,8 @@ function createWindow() {
 
     (async () => {
         screen.config.resourceDirectory = `${__dirname}/assets`;
-        await mouse.move(straightTo(centerOf(screen.waitFor("quit.png", 10000))));
+        await mouse.move(straightTo(centerOf(new Region(0, 0, 200, 400))));
+        await mouse.move(straightTo(centerOf(screen.waitFor(imageResource("quit.png"), 10000))));
         await mouse.leftClick();
     })();
 }

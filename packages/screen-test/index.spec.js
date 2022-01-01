@@ -1,6 +1,7 @@
 "use strict";
 
-const { screen, Region } = require("@nut-tree/nut-js");
+const { screen, Region, imageResource } = require("@nut-tree/nut-js");
+require("@nut-tree/template-matcher");
 
 describe("Screen test", () => {
     describe("dimensions", () => {
@@ -24,7 +25,7 @@ describe("Screen test", () => {
             jest.setTimeout(10000);
             screen.config.resourceDirectory = "../../e2e/assets";
 
-            console.log(await screen.find("mouse.png"));
+            console.log(await screen.find(imageResource("mouse.png")));
         });
 
         it("should report region with highest match when no match with sufficient confidence is found", async () => {
@@ -32,7 +33,7 @@ describe("Screen test", () => {
             screen.config.resourceDirectory = "../../e2e/assets";
 
             try {
-                await screen.find("calculator.png");
+                await screen.find(imageResource("calculator.png"));
             } catch (e) {
                 console.log(e);
             }
@@ -44,7 +45,7 @@ describe("Screen test", () => {
             jest.setTimeout(10000);
             screen.config.resourceDirectory = "../../e2e/assets";
 
-            await screen.waitFor("mouse.png", 2500);
+            await screen.waitFor(imageResource("mouse.png"), 2500);
         });
     })
 
@@ -53,8 +54,9 @@ describe("Screen test", () => {
             screen.config.resourceDirectory = "../../e2e/assets";
             screen.config.confidence = 0.1;
 
-            screen.on("mouse.png", target => console.log(`Match found! ${JSON.stringify(target)}`));
-            await screen.find("mouse.png");
+            const needle = await imageResource("mouse.png");
+            screen.on(needle, target => console.log(`Match found! ${JSON.stringify(target)}`));
+            await screen.find(needle);
         });
     })
 });

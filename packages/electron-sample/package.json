@@ -1,6 +1,6 @@
 {
   "name": "electron-sample",
-  "version": "1.7.0",
+  "version": "2.0.0",
   "description": "A nut.js sample which shows usage with Electron",
   "main": "main.js",
   "repository": {
@@ -9,8 +9,8 @@
   },
   "author": {
     "name": "Simon Hofmann",
-    "email": "dev@simon-hofmann.org",
-    "url": "https://simon-hofmann.org"
+    "email": "kontakt@s1h.org",
+    "url": "https://s1h.org"
   },
   "scripts": {
     "pretest": "electron-rebuild",
@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/nut-tree/trailmix#trailmix",
   "dependencies": {
-    "@nut-tree/nut-js": "next",
+    "@nut-tree/nl-matcher-darwin": "^1.0.1-next.20211202095927",
+    "@nut-tree/nut-js": "2.0.0",
+    "@nut-tree/template-matcher": "1.0.0",
     "electron": "^13.0.0"
   },
   "devDependencies": {

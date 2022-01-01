@@ -1,6 +1,7 @@
 "use strict";
 
-const {jestMatchers, mouse, screen, Point, Region} = require("@nut-tree/nut-js");
+const {jestMatchers, mouse, screen, Point, imageResource, Region, sleep} = require("@nut-tree/nut-js");
+require("@nut-tree/template-matcher");
 
 expect.extend(jestMatchers);
 
@@ -12,6 +13,7 @@ describe("Basic test with custom Jest matchers", () => {
 
         // WHEN
         await mouse.setPosition(targetPoint);
+        await sleep(500);
 
         // THEN
         await expect(mouse).toBeAt(targetPoint);
@@ -25,6 +27,6 @@ describe("Basic test with custom Jest matchers", () => {
         // WHEN
 
         // THEN
-        await expect(screen).toShow("mouse.png");
+        await expect(screen).toShow(imageResource("mouse.png"));
     });
 });
