@@ -26,7 +26,7 @@
     "@nut-tree/nl-matcher-darwin": "^1.0.1-next.20211202095927",
     "@nut-tree/nut-js": "2.0.0",
     "@nut-tree/template-matcher": "1.0.0",
-    "electron": "^13.0.0"
+    "electron": "^15.5.5"
   },
   "devDependencies": {
     "electron-rebuild": "^3.2.3",
