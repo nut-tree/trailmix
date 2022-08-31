@@ -1,6 +1,6 @@
 "use strict";
 
-const {Button, jestMatchers, mouse, straightTo, centerOf, randomPointIn, Region, right, down, left, up} = require("@nut-tree/nut-js");
+const {Button, jestMatchers, mouse, straightTo, centerOf, randomPointIn, Region, Point, right, down, left, up} = require("@nut-tree/nut-js");
 
 expect.extend(jestMatchers);
 
@@ -70,5 +70,41 @@ describe("Mouse test", () => {
             // THEN
             await expect(mouse).toBeIn(targetRegion);
         });
+    });
+
+    describe("EasingFunction", () => {
+	    it("should use linear movment by default", async () => {
+		    // GIVEN
+		    const targetPoint = new Point(10, 10);
+
+		    // WHEN
+		    await mouse.move(straightTo(targetPoint));
+
+		    // THEN
+		    await expect(mouse).toBeAt(targetPoint);
+	    });
+
+	    it("should apply custom easing function written by users", async () => {
+		    // GIVEN
+		    const targetPoint = new Point(10, 10);
+
+		    /**
+		     * An easing function receives a number expressing the percentage our cursor travelled along the path we specified, e.g. via straightTo
+		     *
+		     * Using this percentage we can reduce or increase cursor speed.
+		     * Return values are expected to be positive, finite numbers (otherwise they wont be applied)
+		     *
+		     * ATTENTION: Be careful with your output range, you could e.g. deadlock your cursor by making it move ultra slow
+		     */
+		    const customEasingFunction = (x) => {
+			    return (x <= 0.5) ? -0.75 : 0.75;
+		    };
+
+		    // WHEN
+		    await mouse.move(straightTo(targetPoint), customEasingFunction);
+
+		    // THEN
+		    await expect(mouse).toBeAt(targetPoint);
+	    });
     });
 });

@@ -108,6 +108,28 @@ await mouse.move(up(10));
 await mouse.move(down(10));
 ```
 
+### [`EasingFunction`](https://nut-tree.github.io/apidoc/interfaces/mouse_movement_function.EasingFunction.html)
+
+`EasingFunction`s are used to modify movement behaviour.
+They receive a number expressing the percentage travelled along the path we specified via e.g. [straightTo](#straightto).
+
+When applying an easing function the total speed in pixels with which your cursor will be moving calulates as follows:
+
+```js
+const speedInPixels = baseSpeed + easingFunction(idx / amountOfSteps) * baseSpeed 
+```
+
+So you could customize movement speed to move slower on the first half of a path, to then speed up on the second half using this easing function:
+
+
+```js
+const firstSlowThenFast = (percentage) => {
+	return percentage <= 0.5 ? -0.75 : 0.75;
+}
+
+await mouse.move(left(1000), firstSlowThenFast);
+```
+
 ## [`leftClick`](https://nut-tree.github.io/apidoc/classes/mouse.html#leftclick)
 
 `leftClick` performs a click with the left mouse button at the current cursor position.
