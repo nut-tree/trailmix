@@ -56,7 +56,7 @@ It is possible to override the the [configured matching confidence](#confidence)
 In case of a match, the corresponding [Region](https://nut-tree.github.io/apidoc/classes/region.html) on screen is returned.
 
 ```js
-await mouse.move(straightTo(centerOf(screen.find("image.png"))));
+await mouse.move(straightTo(centerOf(await screen.find(imageResource("image.png")))));
 ```
 
 ## [`height`](https://nut-tree.github.io/apidoc/classes/screen.html#height)
@@ -70,7 +70,7 @@ When working with template images to e.g. move the mouse to certain positions it
 `highlight` allows you to display an opaque window overlay which makes it easier to visually follow detection / movement.
 
 ```js
-await screen.highlight(screen.find("image.png"));
+await screen.highlight(await screen.find(imageResource("image.png")));
 ```
 
 ## [`on`](https://nut-tree.github.io/apidoc/classes/screen.html#on)
@@ -87,7 +87,7 @@ While [find](#findhttpsnut-treegithubionutjsclassesscreenhtmlfind) will fail imm
 Once the configured timeout is reached with no match, `waitFor` will fail.
 
 ```js
-await mouse.move(straightTo(centerOf(screen.waitFor("image.png", 3000))));
+await mouse.move(straightTo(centerOf(await screen.waitFor(imageResource("image.png"), 3000))));
 ```
 
 ## [`width`](https://nut-tree.github.io/apidoc/classes/screen.html#width)
