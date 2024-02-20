@@ -1,12 +1,5 @@
 # trailmix
 
-Small sample projects which demo the usage of nut.js.
+This repo has been archived since all samples are now also included in the [nut.js monorepo](https://github.com/nut-tree/nut.js/tree/develop/examples)
 
-I want to:
-
-- automate [keyboard input](./packages/keyboard-test/README.md)
-- automate [mouse movement](./packages/mouse-test/README.md)
-- search for images on my [screen](./packages/screen-test/README.md)
-- integrate nut.js with [Jest](./packages/jest-test/README.md)
-- see an [Electron + nut.js sample](./packages/electron-sample/README.md)
-- see an [TypeScript + nut.js sample](./packages/typescript-sample/README.md)
+It will no longer be updated in any way, please consult the monorepo for examples.
